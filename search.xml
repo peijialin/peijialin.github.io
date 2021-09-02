@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/09/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<span id="more"></span>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>九月一日晚日记</title>
+    <url>/2021/09/02/%E4%B9%9D%E6%9C%88%E4%B8%80%E6%97%A5%E6%99%9A%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="九月一日晚日记"><a href="#九月一日晚日记" class="headerlink" title="九月一日晚日记"></a>九月一日晚日记</h2><p>现在是2021年9月1号晚上十二点多了，应该算是2号了，严格说来。</p>
+<p>今天把博客又搭起来了，我有点开心，因为我终于可以有事情做了，或者说我又有动力做了。</p>
+<p>之前的那个博客到期了，我也没花精力去找，就让他暂时消失吧，至少在我想复制过来之前。</p>
+<span id="more"></span>
+
+<p>之前的博客确实对我找工作帮助挺大的，说实在的，能来这边我之前一直归于我的幸运，但却是和这个总结的习惯是分不开的。</p>
+<p>最近自己过的太混了，让自己有一种很强的危机感，总感觉再这么混下去就要被淘汰了，，所以我又搭建起了这个博客，希望用此行为来激发我的学习欲望吧。</p>
+<p>也算是给自己一种安全感。</p>
+<p>当然这个静态网页还很不完善，今晚才搭起来的，但是现在已经0：21了，有点困了。细节等明天再来搞吧。</p>
+<p>我的初步想法是吧前端html js css 后端java python 啥的都学一下，刷一下leetcode，提高一下自己的编码水平。当然，学习其他的东西的总结也可以放在这个上面。</p>
+<p>这个以后再说吧，</p>
+<p>希望自己能够振作起来，加油！</p>
+]]></content>
+      <categories>
+        <category>随笔日记</category>
+      </categories>
+      <tags>
+        <tag>随笔日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>九月二日晚日记</title>
+    <url>/2021/09/03/%E4%B9%9D%E6%9C%88%E4%BA%8C%E6%97%A5%E6%99%9A%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="九月二日晚日记"><a href="#九月二日晚日记" class="headerlink" title="九月二日晚日记"></a>九月二日晚日记</h2><p>今天又12点多了，今天就不多写了，希望9/3能够开始吧。</p>
+<p>从学python开始，加油！</p>
+]]></content>
+      <categories>
+        <category>随笔日记</category>
+      </categories>
+      <tags>
+        <tag>随笔日记</tag>
+      </tags>
+  </entry>
+</search>
