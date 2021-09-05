@@ -87,7 +87,7 @@
 <meta property="og:description" content="Python介绍Python是一种解释性、面向对象的语言。能够以很简洁的代码实现一些比较有趣的功能： 12345import turtlet &#x3D; turtle.Pen()for x in range(360):    t.forward(x)    t.left(59)  python是解释执行，性能较低，一些要求性能的场合最好不要用python去开发。">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-09-05T16:23:32.000Z">
-<meta property="article:modified_time" content="2021-09-05T16:26:02.807Z">
+<meta property="article:modified_time" content="2021-09-05T16:27:32.433Z">
 <meta property="article:author" content="peijialin">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
@@ -534,6 +534,7 @@
 <li>is和==的区别<ul>
 <li>is 用于比较对象的地址，即**比较id(obj)**。</li>
 <li>== 默认调用对象的<code>_eq_()</code>方法，即**比较print(obj)**。</li>
+<li>is 运算符比 == 效率高，在变量和None进行比较的时候，使用is。</li>
 </ul>
 </li>
 </ul>

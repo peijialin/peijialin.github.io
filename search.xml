@@ -151,6 +151,7 @@
 <li>is和==的区别<ul>
 <li>is 用于比较对象的地址，即**比较id(obj)**。</li>
 <li>== 默认调用对象的<code>_eq_()</code>方法，即**比较print(obj)**。</li>
+<li>is 运算符比 == 效率高，在变量和None进行比较的时候，使用is。</li>
 </ul>
 </li>
 </ul>
