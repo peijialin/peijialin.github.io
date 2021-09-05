@@ -3,7 +3,7 @@
   <entry>
     <title>PythonN天速成之第一天</title>
     <url>/2021/09/06/PythonN%E5%A4%A9%E9%80%9F%E6%88%90%E4%B9%8B%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>
-    <content><![CDATA[<h2 id="Python介绍"><a href="#Python介绍" class="headerlink" title="Python介绍"></a>Python介绍</h2><p>Python是一种解释性、面向对象的语言。能够以很简洁的代码实现一些比较有趣的功能：</p>
+    <content><![CDATA[<h3 id="Python介绍"><a href="#Python介绍" class="headerlink" title="Python介绍"></a>Python介绍</h3><p>Python是一种解释性、面向对象的语言。能够以很简洁的代码实现一些比较有趣的功能：</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line">t = turtle.Pen()</span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">360</span>):</span><br><span class="line">    t.forward(x)</span><br><span class="line">    t.left(<span class="number">59</span>)</span><br></pre></td></tr></table></figure>
 
 <p>python是解释执行，性能较低，一些要求性能的场合最好不要用python去开发。</p>
