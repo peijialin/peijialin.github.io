@@ -284,7 +284,130 @@
 <p><strong>拼接字符串要点</strong>：</p>
 <p>使用字符串拼接符+，每使用一次，就会生成一个新的字符串对象，因此<code>a+b+c+d</code>这种会生成三个对象，比较浪费性能。</p>
 <p>使用join()函数在拼接字符串之前会计算所有字符串的长度，然后逐一拷贝，仅新建一次对象。</p>
-<h3 id="字符串驻留机制和字符串比较"><a href="#字符串驻留机制和字符串比较" class="headerlink" title="字符串驻留机制和字符串比较"></a>字符串驻留机制和字符串比较</h3><p><strong>字符串驻留</strong>：<strong>仅保存一份相同且不可变字符串的方法，不同的值被存放在字符串驻留池中</strong>。Python支持字符串驻留机制，对于符合标识符规则的字符串（仅包含下划线、字母和数字），会启用字符串驻留机制。</p>
+<h3 id="字符串驻留机制和字符串比较"><a href="#字符串驻留机制和字符串比较" class="headerlink" title="字符串驻留机制和字符串比较"></a>字符串驻留机制和字符串比较</h3><p><strong>字符串驻留</strong>：仅保存一份相同且不可变字符串的方法，不同的值被存放在字符串驻留池中。Python支持字符串驻留机制，<strong>对于符合标识符规则的字符串（仅包含下划线、字母和数字），会启用字符串驻留机制。</strong></p>
+<p>因为python字符串是“不可变的”，所以，使用字符串驻留机制也没什么影响。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a=<span class="string">&quot;abc_11&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b=<span class="string">&quot;abc_11&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> b</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = <span class="string">&quot;dd%&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d = <span class="string">&quot;dd%&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c <span class="keyword">is</span> d</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c == d</span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串的比较和同一性"><a href="#字符串的比较和同一性" class="headerlink" title="字符串的比较和同一性"></a>字符串的比较和同一性</h3><p>我们可以直接使用==，!= 对字符串进行比较，是否含有相同的字符。</p>
+<p>我们使用is 、not is，判断两个对象是否为同一对象，比较的是对象的地址，即<code>id(obj1)</code>是否与<code>id(obj2)</code>相等。</p>
+<h3 id="成员操作符"><a href="#成员操作符" class="headerlink" title="成员操作符"></a>成员操作符</h3><p>in/not in 关键字，判断某个字符串（子字符串）是否存在于字符串中。</p>
+<h3 id="字符串常用查找方法"><a href="#字符串常用查找方法" class="headerlink" title="字符串常用查找方法"></a>字符串常用查找方法</h3><table>
+<thead>
+<tr>
+<th>方法和使用示例</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>len(a)</td>
+<td>字符串长度</td>
+</tr>
+<tr>
+<td>a.startswith(“AAA”)</td>
+<td>以指定字符串开头</td>
+</tr>
+<tr>
+<td>a.endswith(“BBB”)</td>
+<td>以指定字符串结尾</td>
+</tr>
+<tr>
+<td>a.find(‘Test’)</td>
+<td>第一次出现字符串的位置</td>
+</tr>
+<tr>
+<td>a.rfind(‘Test’)</td>
+<td>最后一次出现字符串的位置</td>
+</tr>
+<tr>
+<td>a.count(‘Test’)</td>
+<td>指定字符串出现了几次</td>
+</tr>
+<tr>
+<td>a.isalnum()</td>
+<td>判断所有字符是否全是字母或数字</td>
+</tr>
+</tbody></table>
+<h3 id="去除首尾信息"><a href="#去除首尾信息" class="headerlink" title="去除首尾信息"></a>去除首尾信息</h3><ul>
+<li>我们可以通过strip()去除字符串首尾指定信息，如果括号内不写，则表示去除空白符。</li>
+<li>通过lstrip()去除字符串左边指定信息。</li>
+<li>通过rstrip()去除字符串右边指定信息。</li>
+</ul>
+<h3 id="大小写转换"><a href="#大小写转换" class="headerlink" title="大小写转换"></a>大小写转换</h3><table>
+<thead>
+<tr>
+<th>示例</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a.capitalize()</td>
+<td>产生新的字符串，首字母大写</td>
+</tr>
+<tr>
+<td>a.title()</td>
+<td>产生新的字符串，每个单词首字母大写</td>
+</tr>
+<tr>
+<td>a.upper()</td>
+<td>产生新的字符串，所有字符全转换成大写</td>
+</tr>
+<tr>
+<td>a.lower()</td>
+<td>产生新的字符串，所有字符全转换成小写</td>
+</tr>
+<tr>
+<td>a.swapcase()</td>
+<td>产生新的字符串，所有字母大小写切换</td>
+</tr>
+</tbody></table>
+<h3 id="字符串其他方法"><a href="#字符串其他方法" class="headerlink" title="字符串其他方法"></a>字符串其他方法</h3><table>
+<thead>
+<tr>
+<th>示例</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>isalnum()</td>
+<td>是否为字母或数字</td>
+</tr>
+<tr>
+<td>isalpha()</td>
+<td>用于见此字符串是否只由字母组成（含汉字）</td>
+</tr>
+<tr>
+<td>isdigit()</td>
+<td>检测字符串是否只有数字组成</td>
+</tr>
+<tr>
+<td>isspace()</td>
+<td>检查是否为空白符</td>
+</tr>
+<tr>
+<td>isupper()</td>
+<td>检查是否为大写字母</td>
+</tr>
+<tr>
+<td>islower()</td>
+<td>检查是否为小写字母</td>
+</tr>
+</tbody></table>
+<h3 id="字符串格式化"><a href="#字符串格式化" class="headerlink" title="字符串格式化"></a>字符串格式化</h3><h4 id="format-基本用法"><a href="#format-基本用法" class="headerlink" title="format()基本用法"></a>format()基本用法</h4><p>字符串格式化语法是通过{}来替代字符串的位置，用于我们后续的扩充。举例如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> getpass</span><br><span class="line">myaccount = <span class="built_in">input</span>(<span class="string">&quot;请输入账号：&quot;</span>)</span><br><span class="line">mypassword = getpass.getpass(<span class="string">&quot;请输入密码：&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用索引来进行对字符串的格式化</span></span><br><span class="line">str1 = <span class="string">&quot;您的用户名为：&#123;0&#125;，对应的密码是：&#123;1&#125;，请确认&quot;</span></span><br><span class="line"><span class="built_in">print</span>(str1.<span class="built_in">format</span>(myaccount,mypassword))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 也可以通过参数名来精确定位</span></span><br><span class="line">str2 = <span class="string">&quot;您的用户名为：&#123;username&#125;，对应的密码是：&#123;password&#125;，请确认&quot;</span></span><br><span class="line"><span class="built_in">print</span>(str2.<span class="built_in">format</span>(password=mypassword,username=myaccount))</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">请输入账号：AAA</span><br><span class="line">请输入密码：</span><br><span class="line">您的用户名为：AAA，对应的密码是：CCC，请确认</span><br><span class="line">您的用户名为：AAA，对应的密码是：CCC，请确认</span><br></pre></td></tr></table></figure>
+
+<p>从上面的例子可知，我们可以通过{索引}或者{参数名}，直接映射参数值，实现对字符串的格式化，非常方便。</p>
+<h4 id="填充与对其"><a href="#填充与对其" class="headerlink" title="填充与对其"></a>填充与对其</h4><p>填充常跟对其一起使用</p>
+<p><code>^</code> <code>&lt;</code> <code>&gt;</code>分别是居中、左对齐、右对齐，后面带宽度。<code>:</code>后面带填充的字符，只能是一个字符，不指定的话默认使用空格填充。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;我是&#123;0&#125;,我喜欢数字&#123;1:*&gt;8&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;AAA&quot;</span>,<span class="string">&quot;888&quot;</span>)</span><br><span class="line"><span class="string">&#x27;我是AAA,我喜欢数字*****888&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;我是&#123;0&#125;,我喜欢数字&#123;1:*&lt;8&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;AAA&quot;</span>,<span class="string">&quot;888&quot;</span>)</span><br><span class="line"><span class="string">&#x27;我是AAA,我喜欢数字888*****&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;我是&#123;0&#125;,我喜欢数字&#123;1:*^8&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;AAA&quot;</span>,<span class="string">&quot;888&quot;</span>)</span><br><span class="line"><span class="string">&#x27;我是AAA,我喜欢数字**888***&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="数字格式化"><a href="#数字格式化" class="headerlink" title="数字格式化"></a>数字格式化</h3><p>浮点数通过f，整数通过d进行需要的格式化。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;我是&#123;0&#125;,我喜欢数字&#123;1:.2f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;AAA&quot;</span>,<span class="number">0.0789</span>)</span><br><span class="line"><span class="string">&#x27;我是AAA,我喜欢数字0.08&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>其余的这里就不再赘述，需要时请自行百度。</p>
+<h3 id="可变字符串"><a href="#可变字符串" class="headerlink" title="可变字符串"></a>可变字符串</h3><p>在Python中，字符串属于不可变对象，不支持原地修改，如果需要修改其中的值，只能创建新的字符串对象。这对于那种频繁修改字符串的需求，这种性能的消耗是无法忍受的，因此，我们可以使用<code>io.StringIO</code>对象或<code>array</code>模块。</p>
 ]]></content>
       <categories>
         <category>python3</category>
