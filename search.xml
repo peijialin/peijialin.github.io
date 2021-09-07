@@ -250,31 +250,19 @@
 <td>返回列表对象的浅拷贝</td>
 </tr>
 </tbody></table>
-<h3 id="列表的创建"><a href="#列表的创建" class="headerlink" title="列表的创建"></a>列表的创建</h3><ul>
-<li><p>基本语法[]创建</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = [<span class="number">10</span>,<span class="number">20</span>,<span class="literal">True</span>,<span class="string">&quot;Test&quot;</span>]</span><br><span class="line">&gt;&gt;&gt;a = [] <span class="comment">#创建一个空列表</span></span><br></pre></td></tr></table></figure></li>
-<li><p>**list()**创建</p>
+<h3 id="列表的创建"><a href="#列表的创建" class="headerlink" title="列表的创建"></a>列表的创建</h3><h4 id="基本语法-创建"><a href="#基本语法-创建" class="headerlink" title="基本语法[]创建"></a>基本语法[]创建</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = [<span class="number">10</span>,<span class="number">20</span>,<span class="literal">True</span>,<span class="string">&quot;Test&quot;</span>]</span><br><span class="line">&gt;&gt;&gt;a = [] <span class="comment">#创建一个空列表</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="list-创建"><a href="#list-创建" class="headerlink" title="list()创建"></a>list()创建</h4><p>使用list()可以将任何可迭代的数据转化成列表。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>() <span class="comment"># 创建一个新的列表对象</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">10</span>))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>(<span class="string">&quot;hello,world&quot;</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="string">&#x27;h&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;,&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, <span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;d&#x27;</span>]</span><br></pre></td></tr></table></figure>
+
+<h4 id="range-创建整数列表"><a href="#range-创建整数列表" class="headerlink" title="range()创建整数列表"></a>range()创建整数列表</h4><p>range()可以帮助我们非常方便的创建整数列表，其语法格式为：<code>range([start,]end[,step])</code></p>
 <ul>
-<li>使用list()可以将任何可迭代的数据转化成列表。</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>() <span class="comment"># 创建一个新的列表对象</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">10</span>))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>(<span class="string">&quot;hello,world&quot;</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="string">&#x27;h&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;,&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, <span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;d&#x27;</span>]</span><br></pre></td></tr></table></figure></li>
-<li><p>**range()**创建整数列表</p>
-<ul>
-<li>range()可以帮助我们非常方便的创建整数列表，其语法格式为：<code>range([start,]end[,step])</code><ul>
 <li>start 参数：可选，表示其实数字，默认是0</li>
 <li>end参数：必选，便是结尾数字</li>
 <li>step参数：可选，便是步长，默认是1，可以是负数。</li>
 </ul>
-</li>
-<li>Python3中range()返回的是一个range对象，而不是列表。因此，需要通过list()方法将其转换成列表对象。</li>
-</ul>
-</li>
-<li><p>推导式生成列表</p>
-<ul>
-<li>使用列表推导式可以非常方便的创建列表，与for循环结合使用</li>
-</ul>
-</li>
-</ul>
+<p>Python3中range()返回的是一个range对象，而不是列表。因此，需要通过list()方法将其转换成列表对象。</p>
+<h4 id="推导式生成列表"><a href="#推导式生成列表" class="headerlink" title="推导式生成列表"></a>推导式生成列表</h4><p>使用列表推导式可以非常方便的创建列表，与for循环结合使用</p>
 <h3 id="列表的增加"><a href="#列表的增加" class="headerlink" title="列表的增加"></a>列表的增加</h3><p>当列表增加或者删除元素时，列表会自动进行内存管理，大大减少了程序员的负担。但这个特点（顺序表）涉及列表元素的大量移动，效率较低。除非必要，我们一般只在列表的尾部添加或删除元素，这会大大提高列表的操作效率。</p>
 <h4 id="append-方法"><a href="#append-方法" class="headerlink" title="append()方法"></a>append()方法</h4><p>原地修改列表对象，是真正的列表尾部添加新元素，速度最快，推荐使用。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">20</span>&gt;&gt;&gt; a = [<span class="number">20</span>,<span class="number">40</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a.append(<span class="number">80</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">20</span>, <span class="number">40</span>, <span class="number">80</span>]</span><br></pre></td></tr></table></figure>
@@ -552,6 +540,25 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2021/09/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<span id="more"></span>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>九月一日晚日记</title>
     <url>/2021/09/02/%E4%B9%9D%E6%9C%88%E4%B8%80%E6%97%A5%E6%99%9A%E6%97%A5%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="九月一日晚日记"><a href="#九月一日晚日记" class="headerlink" title="九月一日晚日记"></a>九月一日晚日记</h2><p>现在是2021年9月1号晚上十二点多了，应该算是2号了，严格说来。</p>
@@ -573,25 +580,6 @@
       <tags>
         <tag>随笔日记</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/09/01/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<span id="more"></span>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
   <entry>
     <title>九月二日晚日记</title>
