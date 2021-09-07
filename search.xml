@@ -1,101 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>PythonN天速成之序列</title>
-    <url>/2021/09/07/PythonN%E5%A4%A9%E9%80%9F%E6%88%90%E4%B9%8B%E7%AC%AC%E4%B8%89%E5%A4%A9/</url>
-    <content><![CDATA[<h3 id="序列"><a href="#序列" class="headerlink" title="序列"></a>序列</h3><p>序列是一种数据存储方式，用来存储一系列的数据。<strong>在内存中，序列就是一块用来存放多个值的连续的内存空间。</strong>变量的地址一般来说是第一个值的地址。python中常用的序列结构有：</p>
-<p>字符串、列表、元组、字典和集合</p>
-<p>序列中存储的是对象的地址，因此列表的每个位置都是占用相同大小的内存。</p>
-<span id="more"></span>
-
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>列表<strong>用于存储任意数目、任意类型的数据集合。</strong>列表是内置可变序列，是包含多个元素的有序连续的内存空间。列表中的元素可以各不相同，可以是任意类型。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = [<span class="number">10</span>,<span class="number">20</span>,<span class="string">&#x27;abc&#x27;</span>,<span class="literal">True</span>]</span><br></pre></td></tr></table></figure>
-
-<p>Python列表大小可变，根据需要随时增大或缩小。</p>
-<p>列表常用方法如下：</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>要点</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>list.append(x)</td>
-<td>增加元素</td>
-<td>将元素x增加到列表list尾部</td>
-</tr>
-<tr>
-<td>list.extend(aList)</td>
-<td>增加元素</td>
-<td>将列表aList所有元素加到列表list尾部</td>
-</tr>
-<tr>
-<td>list.insert(index,x)</td>
-<td>增加元素</td>
-<td>在列表list指定位置index处插入元素x</td>
-</tr>
-<tr>
-<td>list.remove(x)</td>
-<td>删除元素</td>
-<td>在列表list中删除首次出现的指定元素x</td>
-</tr>
-<tr>
-<td>list.pop([index])</td>
-<td>删除元素</td>
-<td>删除并返回列表list指定位置index处的元素（单个），不填默认是最后一个元素</td>
-</tr>
-<tr>
-<td>list.clear()</td>
-<td>删除元素</td>
-<td>删除列表所有元素，并不是删除列表对象</td>
-</tr>
-<tr>
-<td>list.index(x)</td>
-<td>访问元素</td>
-<td>返回第一个x的索引位置，若不存在x元素抛出异常</td>
-</tr>
-<tr>
-<td>list.acount(x)</td>
-<td>计数</td>
-<td>返回指定元素x在列表list中出现的次数</td>
-</tr>
-<tr>
-<td>len(list)</td>
-<td>列表长度</td>
-<td>返回列表中包含元素的个数</td>
-</tr>
-<tr>
-<td>list.reverse()</td>
-<td>翻转列表</td>
-<td>所有元素原地翻转</td>
-</tr>
-<tr>
-<td>list.sort()</td>
-<td>排序</td>
-<td>所有元素原地排序</td>
-</tr>
-<tr>
-<td>list.copy()</td>
-<td>浅拷贝</td>
-<td>返回列表对象的浅拷贝</td>
-</tr>
-</tbody></table>
-<h3 id="列表的创建"><a href="#列表的创建" class="headerlink" title="列表的创建"></a>列表的创建</h3><ul>
-<li><p>基本语法[]创建</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = [<span class="number">10</span>,<span class="number">20</span>,<span class="literal">True</span>,<span class="string">&quot;Test&quot;</span>]</span><br><span class="line">&gt;&gt;&gt;a = [] <span class="comment">#创建一个空列表</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>python3</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>python序列</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PythonN天速成之第一天</title>
     <url>/2021/09/06/PythonN%E5%A4%A9%E9%80%9F%E6%88%90%E4%B9%8B%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>
     <content><![CDATA[<h3 id="Python介绍"><a href="#Python介绍" class="headerlink" title="Python介绍"></a>Python介绍</h3><p>Python是一种解释性、面向对象的语言。能够以很简洁的代码实现一些比较有趣的功能：</p>
@@ -261,6 +166,140 @@
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PythonN天速成之列表</title>
+    <url>/2021/09/07/PythonN%E5%A4%A9%E9%80%9F%E6%88%90%E4%B9%8B%E7%AC%AC%E4%B8%89%E5%A4%A9/</url>
+    <content><![CDATA[<h3 id="序列"><a href="#序列" class="headerlink" title="序列"></a>序列</h3><p>序列是一种数据存储方式，用来存储一系列的数据。<strong>在内存中，序列就是一块用来存放多个值的连续的内存空间。</strong>变量的地址一般来说是第一个值的地址。python中常用的序列结构有：</p>
+<p><strong>字符串、列表、元组、字典和集合</strong></p>
+<p>序列中存储的是对象的地址，因此列表的每个位置都是占用相同大小的内存。</p>
+<span id="more"></span>
+
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>列表<strong>用于存储任意数目、任意类型的数据集合。</strong>列表是内置可变序列，是包含多个元素的有序连续的内存空间。列表中的元素可以各不相同，可以是任意类型。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = [<span class="number">10</span>,<span class="number">20</span>,<span class="string">&#x27;abc&#x27;</span>,<span class="literal">True</span>]</span><br></pre></td></tr></table></figure>
+
+<p>Python列表大小可变，根据需要随时增大或缩小。</p>
+<p>列表常用方法如下：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>要点</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>list.append(x)</td>
+<td>增加元素</td>
+<td>将元素x增加到列表list尾部</td>
+</tr>
+<tr>
+<td>list.extend(aList)</td>
+<td>增加元素</td>
+<td>将列表aList所有元素加到列表list尾部</td>
+</tr>
+<tr>
+<td>list.insert(index,x)</td>
+<td>增加元素</td>
+<td>在列表list指定位置index处插入元素x</td>
+</tr>
+<tr>
+<td>list.remove(x)</td>
+<td>删除元素</td>
+<td>在列表list中删除首次出现的指定元素x</td>
+</tr>
+<tr>
+<td>list.pop([index])</td>
+<td>删除元素</td>
+<td>删除并返回列表list指定位置index处的元素（单个），不填默认是最后一个元素</td>
+</tr>
+<tr>
+<td>list.clear()</td>
+<td>删除元素</td>
+<td>删除列表所有元素，并不是删除列表对象</td>
+</tr>
+<tr>
+<td>list.index(x)</td>
+<td>访问元素</td>
+<td>返回第一个x的索引位置，若不存在x元素抛出异常</td>
+</tr>
+<tr>
+<td>list.acount(x)</td>
+<td>计数</td>
+<td>返回指定元素x在列表list中出现的次数</td>
+</tr>
+<tr>
+<td>len(list)</td>
+<td>列表长度</td>
+<td>返回列表中包含元素的个数</td>
+</tr>
+<tr>
+<td>list.reverse()</td>
+<td>翻转列表</td>
+<td>所有元素原地翻转</td>
+</tr>
+<tr>
+<td>list.sort()</td>
+<td>排序</td>
+<td>所有元素原地排序</td>
+</tr>
+<tr>
+<td>list.copy()</td>
+<td>浅拷贝</td>
+<td>返回列表对象的浅拷贝</td>
+</tr>
+</tbody></table>
+<h3 id="列表的创建"><a href="#列表的创建" class="headerlink" title="列表的创建"></a>列表的创建</h3><ul>
+<li><p>基本语法[]创建</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = [<span class="number">10</span>,<span class="number">20</span>,<span class="literal">True</span>,<span class="string">&quot;Test&quot;</span>]</span><br><span class="line">&gt;&gt;&gt;a = [] <span class="comment">#创建一个空列表</span></span><br></pre></td></tr></table></figure></li>
+<li><p>**list()**创建</p>
+<ul>
+<li>使用list()可以将任何可迭代的数据转化成列表。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>() <span class="comment"># 创建一个新的列表对象</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">10</span>))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>(<span class="string">&quot;hello,world&quot;</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="string">&#x27;h&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;,&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, <span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;d&#x27;</span>]</span><br></pre></td></tr></table></figure></li>
+<li><p>**range()**创建整数列表</p>
+<ul>
+<li>range()可以帮助我们非常方便的创建整数列表，其语法格式为：<code>range([start,]end[,step])</code><ul>
+<li>start 参数：可选，表示其实数字，默认是0</li>
+<li>end参数：必选，便是结尾数字</li>
+<li>step参数：可选，便是步长，默认是1，可以是负数。</li>
+</ul>
+</li>
+<li>Python3中range()返回的是一个range对象，而不是列表。因此，需要通过list()方法将其转换成列表对象。</li>
+</ul>
+</li>
+<li><p>推导式生成列表</p>
+<ul>
+<li>使用列表推导式可以非常方便的创建列表，与for循环结合使用</li>
+</ul>
+</li>
+</ul>
+<h3 id="列表的增加"><a href="#列表的增加" class="headerlink" title="列表的增加"></a>列表的增加</h3><p>当列表增加或者删除元素时，列表会自动进行内存管理，大大减少了程序员的负担。但这个特点（顺序表）涉及列表元素的大量移动，效率较低。除非必要，我们一般只在列表的尾部添加或删除元素，这会大大提高列表的操作效率。</p>
+<h4 id="append-方法"><a href="#append-方法" class="headerlink" title="append()方法"></a>append()方法</h4><p>原地修改列表对象，是真正的列表尾部添加新元素，速度最快，推荐使用。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">20</span>&gt;&gt;&gt; a = [<span class="number">20</span>,<span class="number">40</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a.append(<span class="number">80</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">20</span>, <span class="number">40</span>, <span class="number">80</span>]</span><br></pre></td></tr></table></figure>
+
+<h4 id="运算符操作"><a href="#运算符操作" class="headerlink" title="+ 运算符操作"></a>+ 运算符操作</h4><p>并不是真正的尾部添加元素，而是<strong>创建新的列表对象，并将原列表的元素和新列表的元素依次复制到新的列表对象中</strong>。这样会涉及大量的复制操作，效率很低，不推荐使用。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">20</span>,<span class="number">30</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">id</span>(a)</span><br><span class="line"><span class="number">1449218889152</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = a+[<span class="number">40</span>,<span class="number">50</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>, <span class="number">50</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">id</span>(a)</span><br><span class="line"><span class="number">1449218852224</span></span><br></pre></td></tr></table></figure>
+
+<p>通过测试，我们发现a的地址发生了变化，也是创建了新的列表对象。</p>
+<h4 id="extend-方法"><a href="#extend-方法" class="headerlink" title="extend()方法"></a>extend()方法</h4><p>将目标列表的所有元素添加到本列表的尾部，属于原地操作，不创建新的列表对象。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">20</span>,<span class="number">10</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = [<span class="number">30</span>,<span class="number">40</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a.extend(b)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">20</span>, <span class="number">10</span>, <span class="number">30</span>, <span class="number">40</span>]</span><br></pre></td></tr></table></figure>
+
+<h4 id="insert-插入元素"><a href="#insert-插入元素" class="headerlink" title="insert()插入元素"></a>insert()插入元素</h4><p>对于列表这种顺序表，使用insert()方法可以将指定元素插入到列表对象的任意指定位置，这样会让插入位置后面所有元素进行移动，会影响处理速度。<strong>涉及大量元素时，尽量避免使用</strong>。类似发生这种移动的函数还有：remove()、pop()、del()，他们在删除尾部元素时也会发生操作位置后面的元素移动。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">20</span>, <span class="number">10</span>, <span class="number">30</span>, <span class="number">40</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a.insert(<span class="number">2</span>,<span class="number">100</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">20</span>, <span class="number">10</span>, <span class="number">100</span>, <span class="number">30</span>, <span class="number">40</span>]</span><br></pre></td></tr></table></figure>
+
+<h4 id="乘法扩展"><a href="#乘法扩展" class="headerlink" title="乘法扩展"></a>乘法扩展</h4><p>使用惩罚扩展列表，生成一个新列表，新列表元素是原列表元素的多次重复，可以用于列表的初始化。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>]*<span class="number">100</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+
+<h3 id="列表的删除"><a href="#列表的删除" class="headerlink" title="列表的删除"></a>列表的删除</h3><p>35级，未完待续……</p>
+]]></content>
+      <categories>
+        <category>python3</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>python序列</tag>
       </tags>
   </entry>
   <entry>
@@ -513,25 +552,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/09/01/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<span id="more"></span>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>九月一日晚日记</title>
     <url>/2021/09/02/%E4%B9%9D%E6%9C%88%E4%B8%80%E6%97%A5%E6%99%9A%E6%97%A5%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="九月一日晚日记"><a href="#九月一日晚日记" class="headerlink" title="九月一日晚日记"></a>九月一日晚日记</h2><p>现在是2021年9月1号晚上十二点多了，应该算是2号了，严格说来。</p>
@@ -553,6 +573,25 @@
       <tags>
         <tag>随笔日记</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/09/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<span id="more"></span>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>九月二日晚日记</title>
