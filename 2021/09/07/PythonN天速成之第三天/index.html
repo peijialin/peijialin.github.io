@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="序列序列是一种数据存储方式，用来存储一系列的数据。在内存中，序列就是一块用来存放多个值的连续的内存空间。变量的地址一般来说是第一个值的地址。python中常用的序列结构有： 字符串、列表、元组、字典和集合 序列中存储的是对象的地址，因此列表的每个位置都是占用相同大小的内存。 列表列表用于存储任意数目、任意类型的数据集合。列表是内置可变序列，是包含多个元素的有序连续的内存空间。列表中的元素可以各不相">
+<meta name="description" content="序列序列是一种数据存储方式，用来存储一系列的数据。在内存中，序列就是一块用来存放多个值的连续的内存空间。变量的地址一般来说是第一个值的地址。python中常用的序列结构有： 字符串、列表、元组、字典和集合 序列中存储的是对象的地址，因此列表的每个位置都是占用相同大小的内存。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PythonN天速成之序列">
 <meta property="og:url" content="http://example.com/2021/09/07/PythonN%E5%A4%A9%E9%80%9F%E6%88%90%E4%B9%8B%E7%AC%AC%E4%B8%89%E5%A4%A9/index.html">
 <meta property="og:site_name" content="x1aolin">
-<meta property="og:description" content="序列序列是一种数据存储方式，用来存储一系列的数据。在内存中，序列就是一块用来存放多个值的连续的内存空间。变量的地址一般来说是第一个值的地址。python中常用的序列结构有： 字符串、列表、元组、字典和集合 序列中存储的是对象的地址，因此列表的每个位置都是占用相同大小的内存。 列表列表用于存储任意数目、任意类型的数据集合。列表是内置可变序列，是包含多个元素的有序连续的内存空间。列表中的元素可以各不相">
+<meta property="og:description" content="序列序列是一种数据存储方式，用来存储一系列的数据。在内存中，序列就是一块用来存放多个值的连续的内存空间。变量的地址一般来说是第一个值的地址。python中常用的序列结构有： 字符串、列表、元组、字典和集合 序列中存储的是对象的地址，因此列表的每个位置都是占用相同大小的内存。">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-09-07T14:14:06.000Z">
-<meta property="article:modified_time" content="2021-09-07T15:19:49.323Z">
+<meta property="article:modified_time" content="2021-09-07T15:51:01.124Z">
 <meta property="article:author" content="peijialin">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="python序列">
@@ -390,11 +390,12 @@
         <h3 id="序列"><a href="#序列" class="headerlink" title="序列"></a>序列</h3><p>序列是一种数据存储方式，用来存储一系列的数据。<strong>在内存中，序列就是一块用来存放多个值的连续的内存空间。</strong>变量的地址一般来说是第一个值的地址。python中常用的序列结构有：</p>
 <p>字符串、列表、元组、字典和集合</p>
 <p>序列中存储的是对象的地址，因此列表的每个位置都是占用相同大小的内存。</p>
+<span id="more"></span>
+
 <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>列表<strong>用于存储任意数目、任意类型的数据集合。</strong>列表是内置可变序列，是包含多个元素的有序连续的内存空间。列表中的元素可以各不相同，可以是任意类型。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">10</span>,<span class="number">20</span>,<span class="string">&#x27;abc&#x27;</span>,<span class="literal">True</span>]</span><br></pre></td></tr></table></figure>
 
 <p>Python列表大小可变，根据需要随时增大或缩小。</p>
-<p>字符串和列表都是序列类型，一个字符串是一个字符序列，一个列表是任何元素的序列。所有前面一些字符串的方法</p>
 <p>列表常用方法如下：</p>
 <table>
 <thead>
@@ -465,6 +466,10 @@
 <td>返回列表对象的浅拷贝</td>
 </tr>
 </tbody></table>
+<h3 id="列表的创建"><a href="#列表的创建" class="headerlink" title="列表的创建"></a>列表的创建</h3><ul>
+<li><p>基本语法[]创建</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;a = [<span class="number">10</span>,<span class="number">20</span>,<span class="literal">True</span>,<span class="string">&quot;Test&quot;</span>]</span><br><span class="line">&gt;&gt;&gt;a = [] <span class="comment">#创建一个空列表</span></span><br></pre></td></tr></table></figure></li>
+</ul>
 
       
     </div>
@@ -584,7 +589,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%7C%7Carchive">
+                <a href="/archives">
               
                   <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
@@ -641,7 +646,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%8F%E5%88%97"><span class="nav-number">1.</span> <span class="nav-text">序列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">2.</span> <span class="nav-text">列表</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%8F%E5%88%97"><span class="nav-number">1.</span> <span class="nav-text">序列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">2.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="nav-number">3.</span> <span class="nav-text">列表的创建</span></a></li></ol></div>
             
 
           </div>

@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>PythonN天速成之序列</title>
+    <url>/2021/09/07/PythonN%E5%A4%A9%E9%80%9F%E6%88%90%E4%B9%8B%E7%AC%AC%E4%B8%89%E5%A4%A9/</url>
+    <content><![CDATA[<h3 id="序列"><a href="#序列" class="headerlink" title="序列"></a>序列</h3><p>序列是一种数据存储方式，用来存储一系列的数据。<strong>在内存中，序列就是一块用来存放多个值的连续的内存空间。</strong>变量的地址一般来说是第一个值的地址。python中常用的序列结构有：</p>
+<p>字符串、列表、元组、字典和集合</p>
+<p>序列中存储的是对象的地址，因此列表的每个位置都是占用相同大小的内存。</p>
+<span id="more"></span>
+
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>列表<strong>用于存储任意数目、任意类型的数据集合。</strong>列表是内置可变序列，是包含多个元素的有序连续的内存空间。列表中的元素可以各不相同，可以是任意类型。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = [<span class="number">10</span>,<span class="number">20</span>,<span class="string">&#x27;abc&#x27;</span>,<span class="literal">True</span>]</span><br></pre></td></tr></table></figure>
+
+<p>Python列表大小可变，根据需要随时增大或缩小。</p>
+<p>列表常用方法如下：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>要点</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>list.append(x)</td>
+<td>增加元素</td>
+<td>将元素x增加到列表list尾部</td>
+</tr>
+<tr>
+<td>list.extend(aList)</td>
+<td>增加元素</td>
+<td>将列表aList所有元素加到列表list尾部</td>
+</tr>
+<tr>
+<td>list.insert(index,x)</td>
+<td>增加元素</td>
+<td>在列表list指定位置index处插入元素x</td>
+</tr>
+<tr>
+<td>list.remove(x)</td>
+<td>删除元素</td>
+<td>在列表list中删除首次出现的指定元素x</td>
+</tr>
+<tr>
+<td>list.pop([index])</td>
+<td>删除元素</td>
+<td>删除并返回列表list指定位置index处的元素（单个），不填默认是最后一个元素</td>
+</tr>
+<tr>
+<td>list.clear()</td>
+<td>删除元素</td>
+<td>删除列表所有元素，并不是删除列表对象</td>
+</tr>
+<tr>
+<td>list.index(x)</td>
+<td>访问元素</td>
+<td>返回第一个x的索引位置，若不存在x元素抛出异常</td>
+</tr>
+<tr>
+<td>list.acount(x)</td>
+<td>计数</td>
+<td>返回指定元素x在列表list中出现的次数</td>
+</tr>
+<tr>
+<td>len(list)</td>
+<td>列表长度</td>
+<td>返回列表中包含元素的个数</td>
+</tr>
+<tr>
+<td>list.reverse()</td>
+<td>翻转列表</td>
+<td>所有元素原地翻转</td>
+</tr>
+<tr>
+<td>list.sort()</td>
+<td>排序</td>
+<td>所有元素原地排序</td>
+</tr>
+<tr>
+<td>list.copy()</td>
+<td>浅拷贝</td>
+<td>返回列表对象的浅拷贝</td>
+</tr>
+</tbody></table>
+<h3 id="列表的创建"><a href="#列表的创建" class="headerlink" title="列表的创建"></a>列表的创建</h3><ul>
+<li><p>基本语法[]创建</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;a = [<span class="number">10</span>,<span class="number">20</span>,<span class="literal">True</span>,<span class="string">&quot;Test&quot;</span>]</span><br><span class="line">&gt;&gt;&gt;a = [] <span class="comment">#创建一个空列表</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>python3</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>python序列</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PythonN天速成之第一天</title>
     <url>/2021/09/06/PythonN%E5%A4%A9%E9%80%9F%E6%88%90%E4%B9%8B%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>
     <content><![CDATA[<h3 id="Python介绍"><a href="#Python介绍" class="headerlink" title="Python介绍"></a>Python介绍</h3><p>Python是一种解释性、面向对象的语言。能够以很简洁的代码实现一些比较有趣的功能：</p>
@@ -418,96 +513,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PythonN天速成之序列</title>
-    <url>/2021/09/07/PythonN%E5%A4%A9%E9%80%9F%E6%88%90%E4%B9%8B%E7%AC%AC%E4%B8%89%E5%A4%A9/</url>
-    <content><![CDATA[<h3 id="序列"><a href="#序列" class="headerlink" title="序列"></a>序列</h3><p>序列是一种数据存储方式，用来存储一系列的数据。<strong>在内存中，序列就是一块用来存放多个值的连续的内存空间。</strong>变量的地址一般来说是第一个值的地址。python中常用的序列结构有：</p>
-<p>字符串、列表、元组、字典和集合</p>
-<p>序列中存储的是对象的地址，因此列表的每个位置都是占用相同大小的内存。</p>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>列表<strong>用于存储任意数目、任意类型的数据集合。</strong>列表是内置可变序列，是包含多个元素的有序连续的内存空间。列表中的元素可以各不相同，可以是任意类型。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = [<span class="number">10</span>,<span class="number">20</span>,<span class="string">&#x27;abc&#x27;</span>,<span class="literal">True</span>]</span><br></pre></td></tr></table></figure>
-
-<p>Python列表大小可变，根据需要随时增大或缩小。</p>
-<p>字符串和列表都是序列类型，一个字符串是一个字符序列，一个列表是任何元素的序列。所有前面一些字符串的方法</p>
-<p>列表常用方法如下：</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>要点</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>list.append(x)</td>
-<td>增加元素</td>
-<td>将元素x增加到列表list尾部</td>
-</tr>
-<tr>
-<td>list.extend(aList)</td>
-<td>增加元素</td>
-<td>将列表aList所有元素加到列表list尾部</td>
-</tr>
-<tr>
-<td>list.insert(index,x)</td>
-<td>增加元素</td>
-<td>在列表list指定位置index处插入元素x</td>
-</tr>
-<tr>
-<td>list.remove(x)</td>
-<td>删除元素</td>
-<td>在列表list中删除首次出现的指定元素x</td>
-</tr>
-<tr>
-<td>list.pop([index])</td>
-<td>删除元素</td>
-<td>删除并返回列表list指定位置index处的元素（单个），不填默认是最后一个元素</td>
-</tr>
-<tr>
-<td>list.clear()</td>
-<td>删除元素</td>
-<td>删除列表所有元素，并不是删除列表对象</td>
-</tr>
-<tr>
-<td>list.index(x)</td>
-<td>访问元素</td>
-<td>返回第一个x的索引位置，若不存在x元素抛出异常</td>
-</tr>
-<tr>
-<td>list.acount(x)</td>
-<td>计数</td>
-<td>返回指定元素x在列表list中出现的次数</td>
-</tr>
-<tr>
-<td>len(list)</td>
-<td>列表长度</td>
-<td>返回列表中包含元素的个数</td>
-</tr>
-<tr>
-<td>list.reverse()</td>
-<td>翻转列表</td>
-<td>所有元素原地翻转</td>
-</tr>
-<tr>
-<td>list.sort()</td>
-<td>排序</td>
-<td>所有元素原地排序</td>
-</tr>
-<tr>
-<td>list.copy()</td>
-<td>浅拷贝</td>
-<td>返回列表对象的浅拷贝</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>python3</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>python序列</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2021/09/01/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -527,19 +532,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>九月二日晚日记</title>
-    <url>/2021/09/03/%E4%B9%9D%E6%9C%88%E4%BA%8C%E6%97%A5%E6%99%9A%E6%97%A5%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="九月二日晚日记"><a href="#九月二日晚日记" class="headerlink" title="九月二日晚日记"></a>九月二日晚日记</h2><p>今天又12点多了，今天就不多写了，希望9/3能够开始吧。</p>
-<p>从学python开始，加油！</p>
-]]></content>
-      <categories>
-        <category>随笔日记</category>
-      </categories>
-      <tags>
-        <tag>随笔日记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>九月一日晚日记</title>
     <url>/2021/09/02/%E4%B9%9D%E6%9C%88%E4%B8%80%E6%97%A5%E6%99%9A%E6%97%A5%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="九月一日晚日记"><a href="#九月一日晚日记" class="headerlink" title="九月一日晚日记"></a>九月一日晚日记</h2><p>现在是2021年9月1号晚上十二点多了，应该算是2号了，严格说来。</p>
@@ -554,6 +546,19 @@
 <p>我的初步想法是吧前端html js css 后端java python 啥的都学一下，刷一下leetcode，提高一下自己的编码水平。当然，学习其他的东西的总结也可以放在这个上面。</p>
 <p>这个以后再说吧，</p>
 <p>希望自己能够振作起来，加油！</p>
+]]></content>
+      <categories>
+        <category>随笔日记</category>
+      </categories>
+      <tags>
+        <tag>随笔日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>九月二日晚日记</title>
+    <url>/2021/09/03/%E4%B9%9D%E6%9C%88%E4%BA%8C%E6%97%A5%E6%99%9A%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="九月二日晚日记"><a href="#九月二日晚日记" class="headerlink" title="九月二日晚日记"></a>九月二日晚日记</h2><p>今天又12点多了，今天就不多写了，希望9/3能够开始吧。</p>
+<p>从学python开始，加油！</p>
 ]]></content>
       <categories>
         <category>随笔日记</category>
